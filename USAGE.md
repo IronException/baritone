@@ -34,6 +34,7 @@ Some common examples:
 - `farm` to automatically harvest, replant, or bone meal crops
 - `axis` to go to an axis or diagonal axis at y=120 (`axisHeight` is a configurable setting, defaults to 120).
 - `explore x z` to explore the world from the origin of x,z. Leave out x and z to default to player feet. This will continually path towards the closest chunk to the origin that it's never seen before. `explorefilter filter.json` with optional invert can be used to load in a list of chunks to load.
+- `wdl filepath` to walk around in a square spiral and also open containers so their content can be downloaded.
 - `invert` to invert the current goal and path. This gets as far away from it as possible, instead of as close as possible. For example, do `goal` then `invert` to run as far as possible from where you're standing at the start.
 - `version` to get the version of Baritone you're running
 - `damn` daniel

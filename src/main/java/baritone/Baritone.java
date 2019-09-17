@@ -79,6 +79,7 @@ public class Baritone implements IBaritone {
     private CustomGoalProcess customGoalProcess;
     private BuilderProcess builderProcess;
     private ExploreProcess exploreProcess;
+    private ChunkLoaderProcess chunkLoaderProcess;
     private BackfillProcess backfillProcess;
     private FarmProcess farmProcess;
 
@@ -120,6 +121,7 @@ public class Baritone implements IBaritone {
             getToBlockProcess = new GetToBlockProcess(this);
             builderProcess = new BuilderProcess(this);
             exploreProcess = new ExploreProcess(this);
+            chunkLoaderProcess = new ChunkLoaderProcess(this);
             backfillProcess = new BackfillProcess(this);
             farmProcess = new FarmProcess(this);
         }
@@ -187,6 +189,10 @@ public class Baritone implements IBaritone {
 
     public ExploreProcess getExploreProcess() {
         return this.exploreProcess;
+    }
+    
+    public ChunkLoaderProcess getChunkLoaderProcess() {
+        return this.chunkLoaderProcess;
     }
 
     @Override

@@ -76,6 +76,12 @@ public interface IBaritone {
      * @see IExploreProcess
      */
     IExploreProcess getExploreProcess();
+    
+    /**
+     * @return The {@link IChunkLoaderProcess} instance
+     * @see IChunkLoaderProcess
+     */
+    IChunkLoaderProcess getChunkLoaderProcess();
 
     /**
      * @return The {@link IFarmProcess} instance
